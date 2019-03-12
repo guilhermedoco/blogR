@@ -28,11 +28,12 @@ install.packages("shiny")
 
 # Fontes de Estudo e Pesquisa
 
-O Shiny é uma tecnologia baseada em R que transforma sua análise em aplicativos da Web interativos que podem ser distribuídos, por exemplo, on-line para uma página da Web ou intranet corporativa. O desenvolvimento do aplicativo ocorre completamente em R, sem necessidade de conhecimento de HTML ou JavaScript. No entanto, a aparência visual do aplicativo pode ser adaptada com conhecimentos básicos de HTML / CSS.
+Para saber mais sobre o Shiny acesse:
 
-Shiny é um pacote do R que controi aplicações interativas na web (apps) diretamente do R. Com este curso você aprenderá a construir aplicações Shiny do jeito certo.
-
-Se você ainda não instalou o pacote Shiny, abra o R, conecte a internet e execute o comando:
+* Página do Shiny - RStudio:[https://shiny.rstudio.com/](https://shiny.rstudio.com/)
+* Galeria de Shiny: [https://shiny.rstudio.com/gallery/](https://shiny.rstudio.com/gallery/)
+* Tutorial antigo do RStudio: [http://rstudio.github.io/shiny/tutorial/](http://rstudio.github.io/shiny/tutorial/)
+* Show Me Shiny: [https://www.showmeshiny.com/](https://www.showmeshiny.com/)
 
 # Arquitetura
 
