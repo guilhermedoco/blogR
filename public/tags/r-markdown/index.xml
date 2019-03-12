@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>R Markdown on R Blog</title>
+    <link>/tags/r-markdown/</link>
+    <description>Recent content in R Markdown on R Blog</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>pt-br</language>
+    <lastBuildDate>Sat, 23 Feb 2019 21:13:14 -0500</lastBuildDate>
+    
+	<atom:link href="/tags/r-markdown/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Introdução ao Shiny</title>
+      <link>/2019/02/23/introdu%C3%A7%C3%A3o-ao-shiny/</link>
+      <pubDate>Sat, 23 Feb 2019 21:13:14 -0500</pubDate>
+      
+      <guid>/2019/02/23/introdu%C3%A7%C3%A3o-ao-shiny/</guid>
+      <description>IntroduçãoO Shiny é uma tecnologia baseada em R que transforma sua análise em aplicativos da Web interativos que podem ser distribuídos, por exemplo, on-line para uma página da Web ou intranet corporativa. O desenvolvimento do aplicativo ocorre completamente em R, sem necessidade de conhecimento de HTML ou JavaScript. No entanto, a aparência visual do aplicativo pode ser adaptada com conhecimentos básicos de HTML / CSS.
+Shiny é um pacote do R que controi aplicações interativas na web (apps) diretamente do R.</description>
+    </item>
+    
+  </channel>
+</rss>

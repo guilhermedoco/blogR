@@ -1,0 +1,107 @@
+---
+title: "Introdução ao Shiny"
+author: "Guilherme Gil"
+date: 2019-02-23T21:13:14-05:00
+categories: ["R"]
+tags: ["R Markdown", "plot", "regression"]
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(collapse = TRUE)
+```
+
+# Introdução
+
+O Shiny é uma tecnologia baseada em R que transforma sua análise em aplicativos da Web interativos que podem ser distribuídos, por exemplo, on-line para uma página da Web ou intranet corporativa. O desenvolvimento do aplicativo ocorre completamente em R, sem necessidade de conhecimento de HTML ou JavaScript. No entanto, a aparência visual do aplicativo pode ser adaptada com conhecimentos básicos de HTML / CSS.
+
+Shiny é um pacote do R que controi aplicações interativas na web (apps) diretamente do R. Com este curso você aprenderá a construir aplicações Shiny do jeito certo.
+
+Se você ainda não instalou o pacote Shiny, abra o R, conecte a internet e execute o comando:
+
+```{r eval=FALSE, tidy=FALSE}
+install.packages("shiny")
+```
+
+# Fontes de Estudo e Pesquisa
+
+O Shiny é uma tecnologia baseada em R que transforma sua análise em aplicativos da Web interativos que podem ser distribuídos, por exemplo, on-line para uma página da Web ou intranet corporativa. O desenvolvimento do aplicativo ocorre completamente em R, sem necessidade de conhecimento de HTML ou JavaScript. No entanto, a aparência visual do aplicativo pode ser adaptada com conhecimentos básicos de HTML / CSS.
+
+Shiny é um pacote do R que controi aplicações interativas na web (apps) diretamente do R. Com este curso você aprenderá a construir aplicações Shiny do jeito certo.
+
+Se você ainda não instalou o pacote Shiny, abra o R, conecte a internet e execute o comando:
+
+# Arquitetura
+
+Um Shiny app é um diretório que contém pelo menos duas componentes:
+
+- UI: é a interface com o usuário
+
+- Server: a função com as instruções de como construir e reconstruir os objetos R apresentados na interface com o usuário.
+
+![](/img/ShinyInt/ShinyArquitetura.PNG)
+
+# Pacotes do R
+
+Cada vez mais estão sendo contruidos pacotes para trabalhar a parte visual dos aplicativos Shiny, entre eles o que utilizaremos no curso serão:
+
+- shinydashboard
+
+- shinydashboardPlus
+
+- shinycssloaders
+
+- dashboardthemes
+
+- shinyjs
+
+- shinyBS
+
+
+# Anatomia do Shiny App
+
+```{r eval=FALSE, tidy=FALSE}
+library(shiny)
+
+ui <- fluidPage()
+
+server <- function(input, output){}
+
+shinyApp(ui = ui, server = server)
+
+```
+
+# Conceitos
+
+
+Interface do Usuário (UI): Controla o layout e a aparencia da aplicação
+
+Função Server: Contém as intruções para construir a aplicação
+
+shinyApp(): Cria a aplicação Shiny
+
+# Exemplo simples - Shiny App
+
+```{r eval=FALSE, tidy=FALSE}
+library(shiny)
+
+ui <- fluidPage(
+  sliderInput(inputId = "num",
+              label = "Choose a number",
+              value = 25, min = 1, max = 100),
+  plotOutput("hist")
+)
+
+server <- function(input, output){
+  
+  output$hist <- renderPlot({
+    hist(rnorm(input$num))
+  })
+  
+}
+
+shinyApp(ui = ui, server = server)
+
+```
+
+!["Exemplo Shiny"](/img/ShinyInt/Shiny1.PNG)
+
