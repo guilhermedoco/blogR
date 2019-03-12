@@ -1,16 +1,27 @@
 ---
 title: Criando um bot do telegram no R
 author: 'Guilherme '
-date: '2019-03-15'
-slug: criando-um-bot-do-telegram-no-r
+date: '2019-03-12'
 categories:
   - R
 tags:
   - bot
+slug: criando-um-bot-do-telegram-no-r
 ---
 
 
 
-<div id="teste" class="section level1">
-<h1>Teste</h1>
+<div id="introducao" class="section level1">
+<h1>Introdução</h1>
+<p>Cada vez mais os bots estão sendo aplicados a múltiplas situações para auxiliar na automatização de procedimentos repetitivos.</p>
+<p>Mas o que é um bot? Bot é o diminutivo de “robot”, em português, robô. De acordo com a <a href="https://pt.wikipedia.org/wiki/Bot">Wikpédia</a>: é uma aplicação de software concebido para simular ações humanas repetidas vezes de maneira padrão, da mesma forma como faria um robô. No contexto dos programas de computador, pode ser um utilitário que desempenha tarefas rotineiras ou, num jogo de computador, um adversário com recurso a inteligência artificial.</p>
+<p>A motivação desta postagem criar um bot a partir do R onde o bot responderia determinadas perguntas sobre algum conceito específico.</p>
+</div>
+<div id="como-criar-um-bot" class="section level1">
+<h1>Como criar um bot</h1>
+<p>Primeiramente vamos criar um projeto no RStudio, abra um novo script e carregue o pacote “telegram”, caso não tenha ainda instale-o.</p>
+<pre class="r"><code>install.packages(&quot;telegram&quot;)
+library(telegram)</code></pre>
+<p>Agora precisamos criar um bot do Telegram e integrar ao R que será o controlador das ações deste bot.</p>
+<p>Para criar o bot abra seu Telegram e busque pelo contato: <span class="citation">@BotFather</span>, é como estar conversando com uma pessoa real. Neste <a href="https://core.telegram.org/bots#6-botfather">link</a> você poderá ver com detalhes como conversar com o “BotFather”.</p>
 </div>

@@ -6,19 +6,10 @@
     <description>Recent content on R Blog Brasil</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
-    <lastBuildDate>Fri, 15 Mar 2019 00:00:00 +0000</lastBuildDate>
+    <lastBuildDate>Tue, 12 Mar 2019 21:13:14 -0500</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>Criando um bot do telegram no R</title>
-      <link>/2019/03/15/criando-um-bot-do-telegram-no-r/</link>
-      <pubDate>Fri, 15 Mar 2019 00:00:00 +0000</pubDate>
-      
-      <guid>/2019/03/15/criando-um-bot-do-telegram-no-r/</guid>
-      <description>Teste</description>
-    </item>
     
     <item>
       <title>Introdução ao Shiny</title>
@@ -28,6 +19,16 @@
       <guid>/2019/03/12/introdu%C3%A7%C3%A3o-ao-shiny/</guid>
       <description>IntroduçãoO Shiny é uma tecnologia baseada em R que transforma sua análise em aplicativos da Web interativos que podem ser distribuídos, por exemplo, on-line para uma página da Web ou intranet corporativa. O desenvolvimento do aplicativo ocorre completamente em R, sem necessidade de conhecimento de HTML ou JavaScript. No entanto, a aparência visual do aplicativo pode ser adaptada com conhecimentos básicos de HTML / CSS.
 Shiny é um pacote do R que controi aplicações interativas na web (apps) diretamente do R.</description>
+    </item>
+    
+    <item>
+      <title>Criando um bot do telegram no R</title>
+      <link>/2019/03/12/criando-um-bot-do-telegram-no-r/</link>
+      <pubDate>Tue, 12 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/2019/03/12/criando-um-bot-do-telegram-no-r/</guid>
+      <description>IntroduçãoCada vez mais os bots estão sendo aplicados a múltiplas situações para auxiliar na automatização de procedimentos repetitivos.
+Mas o que é um bot? Bot é o diminutivo de “robot”, em português, robô. De acordo com a Wikpédia: é uma aplicação de software concebido para simular ações humanas repetidas vezes de maneira padrão, da mesma forma como faria um robô. No contexto dos programas de computador, pode ser um utilitário que desempenha tarefas rotineiras ou, num jogo de computador, um adversário com recurso a inteligência artificial.</description>
     </item>
     
     <item>
