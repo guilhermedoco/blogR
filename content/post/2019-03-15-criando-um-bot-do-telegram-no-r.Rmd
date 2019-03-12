@@ -30,4 +30,34 @@ Agora precisamos criar um bot do Telegram e integrar ao R que será o controlado
 
 Para criar o bot abra seu Telegram e busque pelo contato: @BotFather, é como estar conversando com uma pessoa real. Neste [link](https://core.telegram.org/bots#6-botfather) você poderá ver com detalhes como conversar com o "BotFather".
 
+Abra o contato @BotFather e crie um novo bot com o comando abaixo:
 
+```{r eval=FALSE, tidy=FALSE}
+/newbot
+```
+
+Após isso ele te perguntará qual o nome do seu robô, no meu caso:
+
+```{r eval=FALSE, tidy=FALSE}
+RobOper_bot
+```
+
+Ainda, ele te perguntará o username do bot, no caso de exemplo coloquei o mesmo nome:
+
+```{r eval=FALSE, tidy=FALSE}
+RobOper_bot
+```
+
+Com esses passos seu bot estará criado o @BotFather te informará seu token de acesso.
+
+Com seu token em mãos crie em seu projeto no RStudio o arquivo .Renviron e insira os comando abaixo:
+
+```{r eval=FALSE, tidy=FALSE}
+R_TELEGRAM_BOT_<NOME DO BOT>=<SEU TOKEN>
+```
+
+Reinicie o R para carregar o arquivo criado.
+
+Agora basta configurar seu bot.
+
+Continua...
