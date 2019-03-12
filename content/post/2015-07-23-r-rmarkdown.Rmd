@@ -103,5 +103,5 @@ shinyApp(ui = ui, server = server)
 
 ```
 
-!["Exemplo Shiny"](/img/ShinyInt/Shiny1.PNG)
+![](/img/ShinyInt/Shiny1.PNG)
 
