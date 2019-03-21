@@ -18,9 +18,7 @@ knitr::opts_chunk$set(collapse = TRUE)
 
 O Shiny é uma tecnologia baseada em R que transforma sua análise em aplicativos da Web interativos que podem ser distribuídos, por exemplo, on-line para uma página da Web ou intranet corporativa. O desenvolvimento do aplicativo ocorre completamente em R, sem necessidade de conhecimento de HTML ou JavaScript. No entanto, a aparência visual do aplicativo pode ser adaptada com conhecimentos básicos de HTML / CSS.
 
-Shiny é um pacote do R que controi aplicações interativas na web (apps) diretamente do R. Com este curso você aprenderá a construir aplicações Shiny do jeito certo.
-
-Se você ainda não instalou o pacote Shiny, abra o R, conecte a internet e execute o comando:
+Shiny é um pacote do R que controi aplicações interativas na web (apps) diretamente do R. Se você ainda não instalou o pacote Shiny, abra o R, conecte a internet e execute o comando:
 
 ```{r eval=FALSE, tidy=FALSE}
 install.packages("shiny")
@@ -34,16 +32,6 @@ Para saber mais sobre o Shiny acesse:
 * Galeria de Shiny: [https://shiny.rstudio.com/gallery/](https://shiny.rstudio.com/gallery/)
 * Tutorial antigo do RStudio: [http://rstudio.github.io/shiny/tutorial/](http://rstudio.github.io/shiny/tutorial/)
 * Show Me Shiny: [https://www.showmeshiny.com/](https://www.showmeshiny.com/)
-
-# Arquitetura
-
-Um Shiny app é um diretório que contém pelo menos duas componentes:
-
-- UI: é a interface com o usuário
-
-- Server: a função com as instruções de como construir e reconstruir os objetos R apresentados na interface com o usuário.
-
-![](/img/ShinyInt/ShinyArquitetura.PNG)
 
 # Pacotes do R
 
@@ -61,6 +49,15 @@ Cada vez mais estão sendo contruidos pacotes para trabalhar a parte visual dos 
 
 - shinyBS
 
+# Arquitetura
+
+Um Shiny app é um diretório que contém pelo menos duas componentes:
+
+- UI: é a interface com o usuário
+
+- Server: a função com as instruções de como construir e reconstruir os objetos R apresentados na interface com o usuário.
+
+![](/img/ShinyInt/ShinyArquitetura.PNG)
 
 # Anatomia do Shiny App
 
@@ -76,7 +73,6 @@ shinyApp(ui = ui, server = server)
 ```
 
 # Conceitos
-
 
 Interface do Usuário (UI): Controla o layout e a aparencia da aplicação
 

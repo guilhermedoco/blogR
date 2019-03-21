@@ -1,6 +1,6 @@
 baseurl = "/"
 languageCode = "pt-br"
-title = "R Blog Brasil"
+title = "Pelos Poderes do R"
 theme = "hugo-lithium"
 googleAnalytics = ""
 disqusShortname = ""

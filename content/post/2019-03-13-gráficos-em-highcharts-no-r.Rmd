@@ -1,0 +1,101 @@
+---
+title: Gráficos em Highcharts no R
+author: Guilherme D R Gil
+date: '2019-03-13'
+slug: gráficos-em-highcharts-no-r
+categories:
+  - R
+  - Highcharts
+tags:
+  - Gráficos
+  - Highcharts
+---
+
+A motivação deste post vem desde que tomei contato com a biblioteca de gráficos [Highcharts](https://www.highcharts.com/demo). Logo a primeira vista achei ela linda e busquei verificar no Google se existia alguma implementação para o R. Para nossa alegria, Joshua Kunst criou o pacote Highcharter que possibilita utilizar todo o potencial do Highcharts no R.
+
+# Introdução
+
+De acordo com a história de criação, tudo começou com a busca de Torstein por uma ferramenta de gráficos simples para atualizar sua página inicial com medidas de profundidade de neve de Vikjafjellet, a montanha local onde sua família mantém uma cabana. Frustrado com os plug-ins flash comuns e outras soluções proprietárias na época, ele decidiu criar uma solução própria baseada em padrões e compartilhá-la com o mundo. 
+
+Então aqui estamos hoje com a possibilidade de utilizar todo potencial desta biblioteca gráfica para expor os resultados de nossas análises. Para aqueles que já possuem uma familiaridade com o pacote "ggplot2" será muito fácil o aprendizado do Highcharts. Mas vamos ao que interessa.
+
+Primeiramente vamos criar um projeto no RStudio, abra um novo script e carregue o pacote "highcharter", caso não tenha ainda instale-o.
+
+```{r eval=FALSE, tidy=FALSE}
+install.packages("highcharter")
+```
+
+Para os exemplos vamos utilizar a base de dados livre "mtcars". Cada linha desta base de dados representa um modelo de carro e nas colunas temos diversas variáveis que caracterizam o carro como: consumo de combustível, potência, nº de marchas, etc.
+
+```{r eval=TRUE, tidy=FALSE, message=FALSE, warning = FALSE}
+library(highcharter)
+library(tidyverse)
+data(mtcars)
+head(mtcars)
+```
+
+Vamos criar um gráfico de barras simples para contabilizar a quantidade de carros dentro de cada categoria de nº de marchas.
+
+```{r eval=TRUE, tidy=FALSE}
+DataAux <- mtcars %>% 
+  group_by(gear) %>% 
+  summarise(n = n())
+
+highchart() %>% 
+  hc_add_series(data = DataAux$n,
+                name = "Nº de marchas",
+                type = "column")
+```
+
+Podemos ver que o eixo x está com as categorias: 0, 1 e 2. Precisamos formatá-la de acordo com as categorias originais do banco de dados.
+
+```{r eval=TRUE, tidy=FALSE}
+highchart() %>% 
+  hc_add_series(data = DataAux$n,
+                name = "Nº de marchas",
+                type = "column") %>% 
+  hc_xAxis(categories = DataAux$gear, 
+           title = "Nº de marchas no veículo")
+```
+
+Podemos nomear o eixo y.
+
+```{r eval=TRUE, tidy=FALSE}
+highchart() %>% 
+  hc_add_series(data = DataAux$n,
+                name = "Nº de marchas",
+                type = "column") %>% 
+  hc_yAxis(title = "Quantidade de veículos")
+```
+
+Você pode colocar o título:
+
+```{r eval=TRUE, tidy=FALSE}
+highchart() %>% 
+  hc_add_series(data = DataAux$n,
+                name = "Nº de marchas",
+                type = "column") %>% 
+  hc_xAxis(categories = DataAux$gear, 
+           title = "Nº de marchas no veículo") %>% 
+  hc_yAxis(title = "Quantidade de veículos") %>% 
+  hc_title(text = "Quantidade de carros por nº de marchas")
+```
+
+Na [API do Highcharts](https://api.highcharts.com/highcharts/) você poderá encontrar diversas outras opções para formatação dos seus gráficos.
+
+Existe uma outra função que utilizo muito para customizar meus gráficos ("hc_plotOptions()").
+
+Mostrando os valores de cada coluna no gráfico:
+
+```{r eval=TRUE, tidy=FALSE}
+highchart() %>% 
+  hc_add_series(data = DataAux$n,
+                name = "Nº de marchas",
+                type = "column") %>% 
+  hc_xAxis(categories = DataAux$gear, 
+           title = "Nº de marchas no veículo") %>% 
+  hc_yAxis(title = "Quantidade de veículos") %>% 
+  hc_title(text = "Quantidade de carros por nº de marchas") %>% 
+  hc_plotOptions(series = list(dataLabels = list(enabled = TRUE)))
+```
+

@@ -1,0 +1,14 @@
+---
+title: Criando meu primeiro aplicativo Shiny
+author: Guilherme
+date: '2019-03-21'
+slug: criando-meu-primeiro-aplicativo-shiny
+categories:
+  - Shiny
+  - R
+tags:
+  - Shiny
+  - App
+---
+
+Em construção
