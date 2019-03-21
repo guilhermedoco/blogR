@@ -6,8 +6,8 @@
 <meta name="generator" content="Hugo 0.54.0" />
 
 
-<title>Introdução ao Shiny - R Blog Brasil</title>
-<meta property="og:title" content="Introdução ao Shiny - R Blog Brasil">
+<title>Introdução ao Shiny - Pelos Poderes do R</title>
+<meta property="og:title" content="Introdução ao Shiny - Pelos Poderes do R">
 
 
   <link href='/favicon.ico' rel='icon' type='image/x-icon'/>
@@ -78,8 +78,7 @@
 <div id="introducao" class="section level1">
 <h1>Introdução</h1>
 <p>O Shiny é uma tecnologia baseada em R que transforma sua análise em aplicativos da Web interativos que podem ser distribuídos, por exemplo, on-line para uma página da Web ou intranet corporativa. O desenvolvimento do aplicativo ocorre completamente em R, sem necessidade de conhecimento de HTML ou JavaScript. No entanto, a aparência visual do aplicativo pode ser adaptada com conhecimentos básicos de HTML / CSS.</p>
-<p>Shiny é um pacote do R que controi aplicações interativas na web (apps) diretamente do R. Com este curso você aprenderá a construir aplicações Shiny do jeito certo.</p>
-<p>Se você ainda não instalou o pacote Shiny, abra o R, conecte a internet e execute o comando:</p>
+<p>Shiny é um pacote do R que controi aplicações interativas na web (apps) diretamente do R. Se você ainda não instalou o pacote Shiny, abra o R, conecte a internet e execute o comando:</p>
 <pre class="r"><code>install.packages(&quot;shiny&quot;)</code></pre>
 </div>
 <div id="fontes-de-estudo-e-pesquisa" class="section level1">
@@ -92,15 +91,6 @@
 <li>Show Me Shiny: <a href="https://www.showmeshiny.com/" class="uri">https://www.showmeshiny.com/</a></li>
 </ul>
 </div>
-<div id="arquitetura" class="section level1">
-<h1>Arquitetura</h1>
-<p>Um Shiny app é um diretório que contém pelo menos duas componentes:</p>
-<ul>
-<li><p>UI: é a interface com o usuário</p></li>
-<li><p>Server: a função com as instruções de como construir e reconstruir os objetos R apresentados na interface com o usuário.</p></li>
-</ul>
-<p><img src="/img/ShinyInt/ShinyArquitetura.PNG" /></p>
-</div>
 <div id="pacotes-do-r" class="section level1">
 <h1>Pacotes do R</h1>
 <p>Cada vez mais estão sendo contruidos pacotes para trabalhar a parte visual dos aplicativos Shiny, entre eles o que utilizaremos no curso serão:</p>
@@ -112,6 +102,15 @@
 <li><p>shinyjs</p></li>
 <li><p>shinyBS</p></li>
 </ul>
+</div>
+<div id="arquitetura" class="section level1">
+<h1>Arquitetura</h1>
+<p>Um Shiny app é um diretório que contém pelo menos duas componentes:</p>
+<ul>
+<li><p>UI: é a interface com o usuário</p></li>
+<li><p>Server: a função com as instruções de como construir e reconstruir os objetos R apresentados na interface com o usuário.</p></li>
+</ul>
+<p><img src="/img/ShinyInt/ShinyArquitetura.PNG" /></p>
 </div>
 <div id="anatomia-do-shiny-app" class="section level1">
 <h1>Anatomia do Shiny App</h1>

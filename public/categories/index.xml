@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Categories on R Blog Brasil</title>
+    <title>Categories on Pelos Poderes do R</title>
     <link>/categories/</link>
-    <description>Recent content in Categories on R Blog Brasil</description>
+    <description>Recent content in Categories on Pelos Poderes do R</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
     
@@ -11,9 +11,18 @@
     
     
     <item>
+      <title>Highcharts</title>
+      <link>/categories/highcharts/</link>
+      <pubDate>Wed, 13 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/categories/highcharts/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>R</title>
       <link>/categories/r/</link>
-      <pubDate>Tue, 12 Mar 2019 00:00:00 +0000</pubDate>
+      <pubDate>Wed, 13 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>/categories/r/</guid>
       <description></description>

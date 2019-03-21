@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Tags on R Blog Brasil</title>
+    <title>Tags on Pelos Poderes do R</title>
     <link>/tags/</link>
-    <description>Recent content in Tags on R Blog Brasil</description>
+    <description>Recent content in Tags on Pelos Poderes do R</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>pt-br</language>
     <lastBuildDate>Tue, 12 Mar 2019 00:00:00 +0000</lastBuildDate>
@@ -17,6 +17,24 @@
       <pubDate>Tue, 12 Mar 2019 00:00:00 +0000</pubDate>
       
       <guid>/tags/bot/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Gráficos</title>
+      <link>/tags/gr%C3%A1ficos/</link>
+      <pubDate>Wed, 13 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/gr%C3%A1ficos/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Highcharts</title>
+      <link>/tags/highcharts/</link>
+      <pubDate>Wed, 13 Mar 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/tags/highcharts/</guid>
       <description></description>
     </item>
     
